@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body data-ng-app="myApp">
+<div data-ng-controller="myfriendctrl">
+<div data-ng-init="getmyfriends()">
+<form>
+<fieldset><strong>Your Friends</strong></fieldset>
+<div data-ng-repeat="myfriend in myfriends">
+
+Your Friend:{{myfriend.friendid}}
+<img src="resources/imgs/greenbutton.png" alt="Fjords" style="width:20%">Online:{{myfriend.isonline}}
+</div>
+</form>
+</div>
+</div>
+Note:-o is online,
+f is offline
+</body>
+</html>
